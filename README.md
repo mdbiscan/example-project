@@ -23,15 +23,6 @@ You will need the following things properly installed on your computer.
 
 * `npm install`
 
-## Running / Development
-There are two development environments:
-
-* `development` is the Ember application running against the mock API service, Mirage. All
-network calls will be intercepted by Mirage (see Mirage config file), with the mock API
-managed by the front end team.
-
-* `integration` is the Ember application running against the development backend service.
-
 ### Commands
 
 **Development**
