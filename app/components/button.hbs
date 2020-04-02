@@ -1,0 +1,30 @@
+<button
+  {{class
+    (concat "button-component-" this.style)
+    @class
+    disabled=@disabled
+    large=this.isLarge
+    small=this.isSmall
+    with-icon=@icon
+  }}
+  id={{@id}}
+  data-role={{this.role}}
+  disabled={{@disabled}}
+  type={{this.type}}
+
+  onclick={{action "onClick"}}
+>
+  {{#if this.isSecondaryIcon}}
+    <div class="__icon-box">
+      {{svg-jar @icon class="__icon"}}
+    </div>
+  {{/if}}
+
+  {{yield}}
+
+  {{#if this.isPrimaryIcon}}
+    <div class="__icon-box">
+      {{svg-jar @icon class="__icon"}}
+    </div>
+  {{/if}}
+</button>

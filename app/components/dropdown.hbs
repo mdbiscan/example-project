@@ -1,0 +1,64 @@
+<div
+  {{class
+    "dropdown-component"
+    @class
+    disabled=@disabled
+    has-value=@value
+    open=this.open
+  }}
+  data-ui-component="dropdown"
+  data-role={{@role}}
+>
+  <label
+    data-role="dropdown-label"
+    id={{this.guid}}>
+    {{@label}}
+  </label>
+
+  <div aria-labelledby={{guid}} class="__container">
+    <SelectBox
+      @classNamePrefix="__select-box"
+      @disabled={{@disabled}}
+      @onSelect={{fn (mut @value)}}
+      @onClickOutside={{this.onClose}}
+      @onFocusOut={{this.onClose}}
+      @onPressEnter={{this.onOpen}}
+      @onPressEscape={{this.onClose}}
+      @onPressDown={{this.onPressDown}}
+      @onPressUp={{this.onPressUp}}
+      @value={{@value}}
+      as |sb|
+    >
+      <sb.SelectedOption class={{if @value "has-value"}} onclick={{fn sb.toggle}}>
+        {{#if @value}}
+          {{this.selectedValue.label}}
+        {{else}}
+          {{this.default}}
+        {{/if}}
+
+        {{svg-jar "arrow-down" class="__icon" width="16" height="16"}}
+      </sb.SelectedOption>
+
+      {{#if (not @disabled)}}
+        <sb.Options>
+          <sb.Option @onSelect={{fn this.onSelect}}>
+            ({{this.default}})
+          </sb.Option>
+
+          {{#each @options as |option|}}
+            <sb.Option
+              @onSelect={{fn this.onSelect}}
+              @value={{option.value}}
+            >
+              {{option.label}}
+            </sb.Option>
+          {{/each}}
+        </sb.Options>
+      {{/if}}
+    </SelectBox>
+  </div>
+
+  {{#if @message}}
+    <p class="__message">{{@message}}</p>
+  {{/if}}
+</div>

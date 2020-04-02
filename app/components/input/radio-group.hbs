@@ -1,0 +1,16 @@
+<div
+  {{class "input-radio-group-component" @class}}
+  data-ui-component="input-radio-group"
+>
+  {{yield (
+    hash Radio=(
+      component
+      "input/radio"
+      disabled=@disabled
+      groupValue=@value
+      name=@name
+      onCheck=@onCheck
+      readonly=@readonly
+    )
+  )}}
+</div>

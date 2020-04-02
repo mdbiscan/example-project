@@ -1,0 +1,5 @@
+export default {
+  PASSWORD: 'PASSWORD',
+  CREDENTIALS: 'CREDENTIALS',
+  DONE: 'DONE',
+}

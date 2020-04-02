@@ -1,0 +1,896 @@
+<FreestyleGuide @title="Example" @subtitle="Living Style Guide">
+  <FreestyleSection @name="Typography" as |Section|>
+    <Section.subsection @name="Font Family">
+      {{#freestyle-usage "font-primary" title="Primary"}}
+        <h3 class="heading-3 font-primary">Source Sans Pro</h3>
+        <p class="font-primary">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Libero volutpat sed cras ornare arcu dui. Urna condimentum mattis
+          pellentesque id. Non nisi est sit amet facilisis magna etiam tempor orci.
+        </p>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "font-secondary" title="Secondary"}}
+        <h3 class="heading-3 font-secondary">Open Sans</h3>
+        <p class="font-secondary">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Libero volutpat sed cras ornare arcu dui. Urna condimentum mattis
+          pellentesque id. Non nisi est sit amet facilisis magna etiam tempor orci.
+        </p>
+      {{/freestyle-usage}}
+    </Section.subsection>
+
+    <Section.subsection @name="Text Size">
+      {{#freestyle-usage "text-lg" title="Large"}}
+        <p class="text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Libero volutpat sed cras ornare arcu dui. Urna condimentum mattis
+          pellentesque id. Non nisi est sit amet facilisis magna etiam tempor orci.
+        </p>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "text-md" title="Medium"}}
+        <p class="text-md">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Libero volutpat sed cras ornare arcu dui. Urna condimentum mattis
+          pellentesque id. Non nisi est sit amet facilisis magna etiam tempor orci.
+        </p>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "text-sm" title="Small"}}
+        <p class="text-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Libero volutpat sed cras ornare arcu dui. Urna condimentum mattis
+          pellentesque id. Non nisi est sit amet facilisis magna etiam tempor orci.
+        </p>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "text-xs" title="X Small"}}
+        <p class="text-xs">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Libero volutpat sed cras ornare arcu dui. Urna condimentum mattis
+          pellentesque id. Non nisi est sit amet facilisis magna etiam tempor orci.
+        </p>
+      {{/freestyle-usage}}
+    </Section.subsection>
+
+    <Section.subsection @name="Headings">
+      <p class="m-16 text-lg">It doesn't matter what h-tag you use, as long as it flows semantically. The h-tags are not tied to the style for the heading.</p>
+
+      {{#freestyle-usage "heading-1" title="Size 1"}}
+        <h2 class="heading-1">Heading 1 Style</h2>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "heading-2" title="Size 2"}}
+        <h1 class="heading-2">Heading 2 Style</h1>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "heading-3" title="Size 3"}}
+        <h3 class="heading-3">Heading 3 Style</h3>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "heading-4" title="Size 4"}}
+        <h6 class="heading-4">Heading 4 Style</h6>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "heading-5" title="Size 5"}}
+        <h4 class="heading-5">Heading 5 Style</h4>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "heading-6" title="Size 6"}}
+        <h5 class="heading-6">Heading 6 Style</h5>
+      {{/freestyle-usage}}
+    </Section.subsection>
+  </FreestyleSection>
+
+  <FreestyleSection @name="Colors" as |Section|>
+    <Section.subsection @name="Text">
+      <ul class="flex m-16 text-center">
+        <li class="m-4">
+          <p class="text-lg text-txt">This color is used exclusively for text.</p>
+          <p class="text-xs text-txt">text-txt</p>
+        </li>
+      </ul>
+    </Section.subsection>
+    <Section.subsection @name="Grays">
+      <ul class="flex m-16 text-center">
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-transparent" />
+          <p class="text-xs text-txt">transparent</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-white" />
+          <p class="text-xs text-txt">white</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-black" />
+          <p class="text-xs text-txt">black</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-gray-300" />
+          <p class="text-xs text-txt">gray-300</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-gray-400" />
+          <p class="text-xs text-txt">gray-400</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-gray-500" />
+          <p class="text-xs text-txt">gray-500</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-gray-600" />
+          <p class="text-xs text-txt">gray-600</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-gray-700" />
+          <p class="text-xs text-txt">gray-700</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-gray-800" />
+          <p class="text-xs text-txt">gray-800</p>
+        </li>
+      </ul>
+    </Section.subsection>
+
+    <Section.subsection @name="Base">
+      <p class="text-md m-16 text-txt">Base is black for a light mode and white for a dark mode (i.e. the "foreground"). Use this the majority of the time, unless a design would require black in all color modes.</p>
+      <ul class="flex m-16 text-center p-8 bg-inverse">
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-base" />
+          <p class="text-xs text-txt">base</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-base-5a" />
+          <p class="text-xs text-txt">base-5a<br>(5% alpha)</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-base-10a" />
+          <p class="text-xs text-txt">base-10a<br>(10% alpha)</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-base-15a" />
+          <p class="text-xs text-txt">base-15a<br>(15% alpha)</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-base-25a" />
+          <p class="text-xs text-txt">base-25a<br>(25% alpha)</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-base-50a" />
+          <p class="text-xs text-txt">base-50a<br>(50% alpha)</p>
+        </li>
+      </ul>
+    </Section.subsection>
+
+    <Section.subsection @name="Inverse">
+      <p class="text-md m-16 text-txt">Inverse is white for a light mode and black for a dark mode (i.e. the "background"). Use this the majority of the time, unless a design would require white in all color modes.</p>
+      <ul class="flex m-16 text-center p-8 bg-base">
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-inverse" />
+          <p class="text-xs text-inverse">inverse</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-inverse-5a" />
+          <p class="text-xs text-inverse">inverse-5a<br>(5% alpha)</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-inverse-10a" />
+          <p class="text-xs text-inverse">inverse-10a<br>(10% alpha)</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-inverse-15a" />
+          <p class="text-xs text-inverse">inverse-15a<br>(15% alpha)</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-inverse-25a" />
+          <p class="text-xs text-inverse">inverse-25a<br>(25% alpha)</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-inverse-50a" />
+          <p class="text-xs text-inverse">inverse-50a<br>(50% alpha)</p>
+        </li>
+      </ul>
+    </Section.subsection>
+
+    <Section.subsection @name="Rainbow">
+      <ul class="flex m-16 text-center">
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-green-500" />
+          <p class="text-xs text-txt">green-500</p>
+        </li>
+      </ul>
+    </Section.subsection>
+
+    <Section.subsection @name="System">
+      <ul class="flex m-16 text-center">
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-system-success" />
+          <p class="text-xs text-txt">system-success</p>
+        </li>
+        <li class="m-4">
+          <div class="w-40 h-40 m-auto border bg-system-error" />
+          <p class="text-xs text-txt">system-error</p>
+        </li>
+      </ul>
+    </Section.subsection>
+  </FreestyleSection>
+
+  <FreestyleSection @name="Spacing" as |Section|>
+    <Section.subsection @name="Margin">
+      <ul class="flex m-16 text-center">
+        <li class="m-4 bg-base-10a">
+          <div class="w-40 h-40 border bg-inverse m-auto" />
+          <p class="text-xs text-txt">auto</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-40 h-40 border bg-inverse m-0" />
+          <p class="text-xs text-txt">0</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-40 h-40 border bg-inverse m-1" />
+          <p class="text-xs text-txt">1px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-40 h-40 border bg-inverse m-2" />
+          <p class="text-xs text-txt">2px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-40 h-40 border bg-inverse m-4" />
+          <p class="text-xs text-txt">4px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-40 h-40 border bg-inverse m-8" />
+          <p class="text-xs text-txt">8px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-40 h-40 border bg-inverse m-16" />
+          <p class="text-xs text-txt">16px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-40 h-40 border bg-inverse m-24" />
+          <p class="text-xs text-txt">24px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-40 h-40 border bg-inverse m-32" />
+          <p class="text-xs text-txt">32px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-40 h-40 border bg-inverse m-40" />
+          <p class="text-xs text-txt">40px</p>
+        </li>
+      </ul>
+    </Section.subsection>
+
+    <Section.subsection @name="Padding">
+      <ul class="flex m-16 text-center">
+        <li class="m-4 bg-base-10a">
+          <div class="border bg-inverse p-auto" />
+          <p class="text-xs text-txt">auto</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="border bg-inverse p-0" />
+          <p class="text-xs text-txt">0</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="border bg-inverse p-1" />
+          <p class="text-xs text-txt">1px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="border bg-inverse p-2" />
+          <p class="text-xs text-txt">2px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="border bg-inverse p-4" />
+          <p class="text-xs text-txt">4px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="border bg-inverse p-8" />
+          <p class="text-xs text-txt">8px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="border bg-inverse p-16" />
+          <p class="text-xs text-txt">16px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="border bg-inverse p-24" />
+          <p class="text-xs text-txt">24px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="border bg-inverse p-32" />
+          <p class="text-xs text-txt">32px</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="border bg-inverse p-40" />
+          <p class="text-xs text-txt">40px</p>
+        </li>
+      </ul>
+    </Section.subsection>
+
+    <Section.subsection @name="Width">
+      <ul class="flex m-16 text-center">
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-auto" />
+          <p class="text-xs text-txt">w-auto (auto)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-0" />
+          <p class="text-xs text-txt">w-0 (0px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-1" />
+          <p class="text-xs text-txt">w-1 (1px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-2" />
+          <p class="text-xs text-txt">w-2 (2px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-4" />
+          <p class="text-xs text-txt">w-4 (4px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-8" />
+          <p class="text-xs text-txt">w-8 (8px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-16" />
+          <p class="text-xs text-txt">w-16 (16px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-24" />
+          <p class="text-xs text-txt">w-24 (24px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-32" />
+          <p class="text-xs text-txt">w-32 (32px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-40" />
+          <p class="text-xs text-txt">w-40 (40px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-full" />
+          <p class="text-xs text-txt">w-full (100%)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-1-4" />
+          <p class="text-xs text-txt">w-1-4 (25%)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-1-2" />
+          <p class="text-xs text-txt">w-1-2 (50%)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-3-4" />
+          <p class="text-xs text-txt">w-3-4 (75%)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-100vw" />
+          <p class="text-xs text-txt">w-100vw<br>(screen vertical width)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="h-8 bg-base w-50vw" />
+          <p class="text-xs text-txt">w-50vw<br>(screen vertical width)</p>
+        </li>
+      </ul>
+    </Section.subsection>
+
+    <Section.subsection @name="Height">
+      <ul class="flex m-16 text-center">
+        <li class="m-4 bg-base-10a">
+          <div class="w-full bg-base h-auto" />
+          <p class="text-xs text-txt">h-auto (auto)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-full bg-base h-0" />
+          <p class="text-xs text-txt">h-0 (0px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-full bg-base h-1" />
+          <p class="text-xs text-txt">h-1 (1px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-full bg-base h-2" />
+          <p class="text-xs text-txt">h-2 (2px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-full bg-base h-4" />
+          <p class="text-xs text-txt">h-4 (4px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-full bg-base h-8" />
+          <p class="text-xs text-txt">h-8 (8px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-full bg-base h-16" />
+          <p class="text-xs text-txt">h-16 (16px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-full bg-base h-24" />
+          <p class="text-xs text-txt">h-24 (24px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-full bg-base h-32" />
+          <p class="text-xs text-txt">h-32 (32px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-full bg-base h-40" />
+          <p class="text-xs text-txt">h-40 (40px)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-full bg-base h-full" />
+          <p class="text-xs text-txt">h-full (100%)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-full bg-base h-100vh" />
+          <p class="text-xs text-txt">h-100vh<br>(screen vertical height)</p>
+        </li>
+        <li class="m-4 bg-base-10a">
+          <div class="w-full bg-base h-50vh" />
+          <p class="text-xs text-txt">h-50vh<br>(screen vertical height)</p>
+        </li>
+      </ul>
+    </Section.subsection>
+  </FreestyleSection>
+
+  <FreestyleSection @name="Links" as |Section|>
+    <Section.subsection @name="Basic">
+      {{#freestyle-usage "link-basic" title="Basic"}}
+        <a href="#">Click Me</a>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "link-link-to" title="LinkTo"}}
+        <LinkTo @route="freestyle">
+          Click Me
+        </LinkTo>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "link-classes" title="With Classes"}}
+        <a href="#" class="m-12 text-lg text-base hover:text-gray-700">Click Me</a>
+      {{/freestyle-usage}}
+    </Section.subsection>
+
+    <Section.subsection @name="As Button">
+      {{#freestyle-usage "link-primary-button" title="Primary Button"}}
+        <a href="#" class="link-button-primary">Click Me</a>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "link-secondary-button" title="Secondary Button"}}
+        <a href="#" class="link-button-secondary">Click Me</a>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "link-link-to-button" title="LinkTo Button"}}
+        <LinkTo @route="freestyle" class="link-button-primary">
+          Style Guide
+        </LinkTo>
+      {{/freestyle-usage}}
+    </Section.subsection>
+  </FreestyleSection>
+
+  <FreestyleSection @name="Buttons" as |Section|>
+    <Section.subsection @name="Primary">
+      {{#freestyle-usage "button-primary" title="Primary (Default)"}}
+        <Button
+          @onClick={{fn this.onClick}}
+        >
+          Click Me
+        </Button>
+      {{/freestyle-usage}}
+    </Section.subsection>
+
+    <Section.subsection @name="Secondary">
+      {{#freestyle-usage "button-secondary" title="Secondary"}}
+        <Button
+          @style="secondary"
+          @onClick={{fn this.onClick}}
+        >
+          Click Me
+        </Button>
+      {{/freestyle-usage}}
+    </Section.subsection>
+
+    <Section.subsection @name="Link">
+      {{#freestyle-usage "button-link" title="Button as Link"}}
+        <Button
+          @style="link"
+          @onClick={{fn this.onClick}}
+          @class="text-sm text-base"
+        >
+          Click Me
+        </Button>
+      {{/freestyle-usage}}
+    </Section.subsection>
+
+    <Section.subsection @name="Options">
+      {{#freestyle-usage "button-small" title="Small"}}
+        <Button
+          @size="small"
+          @onClick={{fn this.onClick}}
+        >
+          Click Me
+        </Button>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "button-large" title="Large"}}
+        <Button
+          @size="large"
+          @onClick={{fn this.onClick}}
+        >
+          Click Me
+        </Button>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "button-primary-icon" title="Primary with Icon"}}
+        <Button
+          @icon="test"
+          @onClick={{fn this.onClick}}
+        >
+          Click Me
+        </Button>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "button-secondary-icon" title="Secondary with Icon"}}
+        <Button
+          @icon="test"
+          @style="secondary"
+          @onClick={{fn this.onClick}}
+        >
+          Click Me
+        </Button>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "button-disabled" title="Disabled"}}
+        <Button
+          @disabled={{true}}
+          @onClick={{fn this.onClick}}
+        >
+          Click Me
+        </Button>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "button-role" title="Distinct Roles"}}
+        <Button
+          @onClick={{fn this.onClick}}
+          @role="example"
+        >
+          Click Me
+        </Button>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "button-class" title="Additional Class Support"}}
+        <Button
+          @class="m-16"
+          @onClick={{fn this.onClick}}
+          >
+          Click Me
+        </Button>
+      {{/freestyle-usage}}
+    </Section.subsection>
+  </FreestyleSection>
+
+  <FreestyleSection @name="UI Components" as |Section|>
+    <Section.subsection @name="Input/Textbox">
+      {{#freestyle-usage "textbox-input-basic" title="Basic Textbox"}}
+        <Input::Textbox
+          @name="example"
+          @label="Example Input"
+          @value={{this.inputTextValue}}
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "textbox-input-with-classes" title="With Classes"}}
+        <Input::Textbox
+          @class="m-16"
+          @name="example"
+          @label="Example Input"
+          @value={{this.inputTextValue}}
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "textbox-input-hide-label" title="Hide Label"}}
+        <Input::Textbox
+          @hideLabel={{true}}
+          @name="example"
+          @value={{this.inputTextValue}}
+          @label="Example Input"
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "textbox-input-with-icon" title="With Icon"}}
+        <Input::Textbox
+          @name="example"
+          @label="Example Input"
+          @value={{this.inputTextValue}}
+          @icon="test"
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "textbox-input-other-types" title="Other Types"}}
+        <Input::Textbox
+          @name="example"
+          @label="Number Input"
+          @value={{this.inputTextValue}}
+          @placeholder="1 to 100"
+          @type="number"
+          @min="1"
+          @max="100"
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "textbox-input-full-width" title="Full Width"}}
+        <Input::Textbox
+          @name="example"
+          @label="Example Input"
+          @value={{this.inputTextValue}}
+          @full={{true}}
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "textbox-input-error" title="Input with Error"}}
+        <Input::Textbox
+          @name="example"
+          @label="Example Input"
+          @value={{this.inputTextValue}}
+          @error={{true}}
+          @message="Oh no, something is wrong!"
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "textbox-input-success" title="Input with Success"}}
+        <Input::Textbox
+          @name="example"
+          @label="Example Input"
+          @value={{this.inputTextValue}}
+          @success={{true}}
+          @message="All is well, go ahead!"
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "textbox-input-disabled" title="Disabled Input"}}
+        <Input::Textbox
+          @name="example"
+          @label="Example Input"
+          @value="Howdy, friend!"
+          @disabled={{true}}
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "textbox-input-readonly" title="Readonly Input"}}
+        <Input::Textbox
+          @name="example"
+          @label="Example Input"
+          @value="Howdy, friend!"
+          @readonly={{true}}
+        />
+      {{/freestyle-usage}}
+    </Section.subsection>
+
+    <Section.subsection @name="Input/Checkbox">
+      {{#freestyle-usage "checkbox-basic" title="Basic"}}
+        <Input::Checkbox
+          @checked={{this.checkboxValue}}
+          @label="Is this checked?"
+          @name="whatever"
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "checkbox-with-block" title="With Block"}}
+        <Input::Checkbox
+          @checked={{this.checkboxValue}}
+          @name="whatever"
+        >
+          Is this checked?
+        </Input::Checkbox>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "checkbox-disabled" title="Disabled Checkbox"}}
+        <Input::Checkbox
+          @checked={{true}}
+          @disabled="true"
+          @label="Is this checked?"
+          @name="whatever"
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "checkbox-event" title="With Event"}}
+        <Input::Checkbox
+          @checked={{this.checkboxAltValue}}
+          @label="Is this checked?"
+          @name="whatever"
+          @onClick={{fn this.onCheckBoxClick}}
+        />
+      {{/freestyle-usage}}
+    </Section.subsection>
+
+    <Section.subsection @name="Input/Radio">
+      <p class="m-16">Value is {{this.radioValue}}!</p>
+      {{#freestyle-usage "radio-basic" title="Basic"}}
+        <Input::RadioGroup
+          @value={{this.radioValue}}
+          @name="foobar"
+          as |Group|
+        >
+          <Group.Radio
+            @label="Foo"
+            @value="foo"
+          />
+          <Group.Radio
+            @label="Bar"
+            @value="bar"
+          />
+        </Input::RadioGroup>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "radio-disabled" title="Disabled"}}
+        <Input::RadioGroup
+          @value={{this.radioValue}}
+          @name="foobar"
+          @disabled={{true}}
+          as |Group|
+        >
+          <Group.Radio
+            @label="Foo"
+            @value="foo"
+          />
+          <Group.Radio
+            @label="Bar"
+            @value="bar"
+          />
+        </Input::RadioGroup>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "radio-blocks" title="With Blocks"}}
+        <Input::RadioGroup
+          @value={{this.radioValue}}
+          @name="foobar"
+          as |Group|
+        >
+          <Group.Radio
+            @value="foo"
+          >
+            Foo
+          </Group.Radio>
+          <Group.Radio
+            @value="bar"
+          >
+            Bar
+          </Group.Radio>
+        </Input::RadioGroup>
+      {{/freestyle-usage}}
+    </Section.subsection>
+
+    <Section.subsection @name="Dropdown">
+      <p class="m-16">Dropdown value is {{this.dropdownValue}}</p>
+      {{#freestyle-usage "dropdown-base" title="Base"}}
+        <Dropdown
+          @class="m-8"
+          @label="Example Dropdown"
+          @options={{this.dropdownOptions}}
+          @value={{this.dropdownValue}}
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "dropdown-disabled" title="Disabled"}}
+        <Dropdown
+          @label="Example Dropdown"
+          @options={{this.dropdownOptions}}
+          @value={{this.dropdownValue}}
+          @disabled={{true}}
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "dropdown-with-message" title="With Message"}}
+        <Dropdown
+          @label="Example Dropdown"
+          @options={{this.dropdownOptions}}
+          @value={{this.dropdownValue}}
+          @message="Help text"
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "dropdown-full-width" title="Full Width"}}
+        <Dropdown
+          @class="w-full"
+          @label="Example Dropdown"
+          @options={{this.dropdownOptions}}
+          @value={{this.dropdownValue}}
+        />
+      {{/freestyle-usage}}
+    </Section.subsection>
+
+    <Section.subsection @name="Toggle">
+      {{#freestyle-usage "toggle-base" title="Base"}}
+        <Toggle
+          @class="m-8"
+          @checked={{this.toggleCheck}}
+          @label="Check"
+        />
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "toggle-disabled" title="Disabled"}}
+        <Toggle
+          @class="m-8"
+          @checked={{this.toggleCheck}}
+          @label="Check"
+          @disabled={{true}}
+        />
+      {{/freestyle-usage}}
+    </Section.subsection>
+
+    <Section.subsection @name="Copyright">
+      {{#freestyle-usage "copyright" title="Copyright"}}
+        <Copyright @class="text-base-50a" />
+      {{/freestyle-usage}}
+    </Section.subsection>
+  </FreestyleSection>
+
+  <FreestyleSection @name="Notifications" as |Section|>
+    <p class="m-16 text-lg">The notification service manages messages and toasts.</p>
+
+    <Section.subsection @name="Messages">
+      <p class="m-16">
+        <Button @onClick={{fn this.onNotifySuccess}}>Notify Sucess!</Button>
+        <br><br>
+        <Button @onClick={{fn this.onNotifyError}}>Notify Error!</Button>
+        <br><br>
+        <Button @onClick={{fn this.onNotifyInfo}}>Notify Info!</Button>
+        <br><br>
+        <Button @onClick={{fn this.onClearAllNotificationMessages}}>Clear All</Button>
+      </p>
+    </Section.subsection>
+
+    <Section.subsection @name="Toasts">
+      <p class="m-16">
+        <Button @onClick={{fn this.onToastAutoPop}}>Autoclose Toast!</Button>
+        <br><br>
+        <Button @onClick={{fn this.onToastManualPop}}>Dismissable Toast!</Button>
+      </p>
+    </Section.subsection>
+  </FreestyleSection>
+
+  <FreestyleSection @name="UI Classes" as |Section|>
+    <Section.subsection @name="Dividers">
+      {{#freestyle-usage "divider-dark" title="Dark"}}
+        <hr class="div-dark">
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "divider-light" title="Light"}}
+        <hr class="div-light">
+      {{/freestyle-usage}}
+    </Section.subsection>
+  </FreestyleSection>
+
+  <FreestyleSection @name="UI Utilities" as |Section|>
+    <Section.subsection @name="Screen Hide">
+      <p class="text-txt m-16">
+        Elements that use this class will be visuall hidden with accessibilty in mind.
+        Use this class instead of setting the display to none.
+      </p>
+
+      {{#freestyle-usage "screen-hidden" title="Screen Hidden"}}
+        <div class="screen-hidden">Hidden content</div>
+      {{/freestyle-usage}}
+    </Section.subsection>
+
+    <Section.subsection @name="Box Sizing">
+      {{#freestyle-usage "border-box" title=".border-box"}}
+        <p class="border-box inline-block w-1-4 p-24 border text-txt">This box is 25% wide with a 24px padding on all sides.</p>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "content-box" title=".content-box"}}
+        <p class="content-box inline-block w-1-4 p-24 border text-txt">This box is 25% wide with a 24px padding on all sides.</p>
+      {{/freestyle-usage}}
+    </Section.subsection>
+
+    <Section.subsection @name="Transition">
+      {{#freestyle-usage "transition-default" title=".transition"}}
+        <button type="button" class="transition text-gray-900 p-4 border border-green text-txt" onClick={{fn this.onTransition}}>Click Me</button>
+      {{/freestyle-usage}}
+
+      {{#freestyle-usage "transition-500" title=".transition-500"}}
+        <button type="button" class="transition-500 text-gray-900 p-4 border border-green text-txt" onClick={{fn this.onTransition}}>Click Me</button>
+      {{/freestyle-usage}}
+    </Section.subsection>
+  </FreestyleSection>
+</FreestyleGuide>

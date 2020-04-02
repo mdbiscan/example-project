@@ -1,0 +1,47 @@
+<Layout::LoggedOut
+  @pageTitle="Welcome back"
+>
+  <form
+    data-role="login-form"
+    {{on "submit" this.onLogin}}
+  >
+    <Input::Textbox
+      @class="w-full mb-16"
+      @value={{this.email}}
+      @label="Email"
+      @name="email"
+      @error={{this.emailError}}
+      @message="Please include a valid email address."
+      @onFocusOut={{fn this.onValidateEmail}}
+    />
+
+    <Input::Textbox
+      @class="w-full mb-16"
+      @value={{this.password}}
+      @type="password"
+      @label="Password"
+      @name="password"
+    />
+
+    <div class="flex justify-between items-center">
+      <LinkTo @route="password-reset">
+        Forgot your password?
+      </LinkTo>
+
+      <Button
+        @role="login"
+        @disabled={{this.isLoginDisabled}}
+        @type="submit"
+      >
+        Next
+      </Button>
+    </div>
+  </form>
+
+  <div class="mt-32 pt-24 border-t-2 border-gray-500">
+    <p class="text-md mb-8">
+      <strong>Don't have an account or looking for more information?</strong>
+    </p>
+    <a href="#">Request Access</a>
+  </div>
+</Layout::LoggedOut>

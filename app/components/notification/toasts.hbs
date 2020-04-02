@@ -1,0 +1,7 @@
+{{#if this.toasts}}
+  <ul class="notification-toasts-component" data-ui-component="notification-toasts">
+    {{#each this.toasts as |toast|}}
+      <Notification::Toast @toast={{toast}} />
+    {{/each}}
+  </ul>
+{{/if}}

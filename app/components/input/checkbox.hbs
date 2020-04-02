@@ -1,0 +1,30 @@
+<label
+  {{class
+   "input-checkbox-component"
+   @class
+   checked=@checked
+   disabled=@disabled
+  }}
+  for={{this.guid}}
+  data-ui-component="input-checkbox"
+>
+  <div class="__checkmark-box">
+    {{#if @checked}}
+      {{svg-jar "checkmark" class="__checkmark"}}
+    {{/if}}
+  </div>
+  {{#if hasBlock}}
+    {{yield}}
+  {{else}}
+    {{@label}}
+  {{/if}}
+  <Input
+    @checked={{@checked}}
+    @disabled={{@disabled}}
+    @id={{this.guid}}
+    @name={{@name}}
+    @type="checkbox"
+
+    {{on "click" this.onClick}}
+  />
+</label>

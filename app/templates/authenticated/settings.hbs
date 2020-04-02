@@ -1,0 +1,47 @@
+<div id="layout-bisection">
+  <section class="left-container">
+    <h1 class="heading-1 text-txt">Settings</h1>
+
+    <form
+      data-role="update-settings-form"
+      {{on "submit" this.onUpdateSettings}}
+    >
+      <div class="flex justify-between items-center mb-24">
+        Order Confirmation
+        <Toggle
+          @checked={{this.model.orderConfirmation}}
+          @label="orderConfirmation"
+          @role="order-confirmation"
+        />
+      </div>
+
+      <div class="flex justify-between items-center mb-24">
+        Order Cancellation Confirmation
+        <Toggle
+          @checked={{this.model.orderCancellationConfirmation}}
+          @label="orderCancelConfirmation"
+          @role="order-cancel-confirmation"
+        />
+      </div>
+
+      <Dropdown
+        @class="w-full"
+        @role="timezone"
+        @label="Timezone"
+        @default="Select Timezone"
+        @options={{this.timezoneOptions}}
+        @value={{this.model.timezone}}
+      />
+
+      <div class="text-right">
+        <Button @role="update-settings"
+          @type="submit"
+          @class="mt-40"
+          @disabled={{this.isUpdateDisabled}}
+        >
+          Update Settings
+        </Button>
+      </div>
+    </form>
+  </section>
+</div>

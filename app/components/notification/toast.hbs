@@ -1,0 +1,16 @@
+<li {{class "__toast" is-closing=this.isClosing}} data-ui-component="notification-toast">
+  <div class="__wrapper">
+    <p class="__toast-text" data-role="toast-text">{{@toast.text}}</p>
+  </div>
+
+  {{#if (not @toast.countdown)}}
+    <button
+      {{on "click" this.onPop}}
+
+      class="__dismiss-button"
+      data-role="dismiss-toast"
+    >
+      Dismiss
+    </button>
+  {{/if}}
+</li>

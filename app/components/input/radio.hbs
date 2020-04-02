@@ -1,0 +1,29 @@
+<label
+  {{class
+    "input-radio-component"
+    @class
+    checked=this.checked
+    disabled=@disabled
+  }}
+  data-ui-component="input-radio"
+  for={{this.guid}}
+>
+  <div class="__radio-box">
+    <div class="__radio" />
+  </div>
+  {{#if hasBlock}}
+    {{yield}}
+  {{else}}
+    {{@label}}
+  {{/if}}
+  <Input
+    checked={{this.checked}}
+    @disabled={{@disabled}}
+    @id={{this.guid}}
+    @name={{@name}}
+    @type="radio"
+    @value={{@value}}
+
+    @change={{fn (mut @groupValue) @value}}
+  />
+</label>

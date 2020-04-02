@@ -1,0 +1,74 @@
+:root {
+  --header-height: 7.4rem;
+}
+
+#site-header {
+  align-items: center;
+  background-color: var(--inverse);
+  box-shadow: 0 4px 16px rgba(95, 115, 127, 0.16);
+  display: flex;
+  height: var(--header-height);
+  justify-content: space-between;
+  left: 0;
+  min-width: var(--min-width);
+  padding: 2rem 2.6rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+#site-header .main-menu {
+  background-color: var(--inverse);
+  border-radius: 0.4rem;
+  box-shadow: 0 4px 16px rgba(95, 115, 127, 0.16);
+  opacity: 0;
+  padding: 1.6rem;
+  position: absolute;
+  right: 20px;
+  text-align: left;
+  top: 86px;
+  transition: opacity 250ms ease-in-out;
+  width: 18.5rem;
+  z-index: 10;
+}
+
+#site-header .main-menu.show {
+  opacity: 1;
+}
+
+#site-header #toggle-menu {
+  outline: none;
+}
+
+#site-header #toggle-menu svg {
+  fill: var(--base);
+}
+
+#site-header #toggle-menu.show svg,
+#site-header #toggle-menu:focus svg {
+  fill: var(--green-500);
+}
+
+#site-header nav a svg,
+#site-header nav button svg {
+  fill: var(--gray-800);
+}
+
+#site-header nav a:hover svg,
+#site-header nav a:focus svg,
+#site-header nav button:hover svg,
+#site-header nav button:focus svg {
+  fill: var(--green-500);
+}
+
+#site-header nav ul li svg {
+  fill: var(--gray-800);
+}
+
+#site-header .system-time {
+  font-size: 2.6rem;
+}
+
+#site-header .timezone {
+  font-size: 1.2rem;
+}

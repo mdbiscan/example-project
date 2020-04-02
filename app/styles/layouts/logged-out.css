@@ -1,0 +1,63 @@
+#layout-logged-out {
+  display: grid;
+  grid-template-areas: 'left right';
+  grid-template-columns: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#layout-logged-out .left-container {
+  grid-area: left;
+
+  align-content: space-between;
+  display: grid;
+  grid-row-gap: 4rem;
+  grid-column-gap: 2rem;
+  grid-template-rows: 15rem auto 15rem;
+  grid-template-columns: 10% auto 10%;
+  grid-template-areas:
+    '. header .'
+    '. main .'
+    '. footer .'
+  ;
+  min-height: auto;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1024px) {
+  #layout-logged-out .left-container {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #layout-logged-out {
+    grid-template-columns: 100% 0;
+  }
+}
+
+#layout-logged-out .right-container {
+  grid-area: right;
+
+  background-image: url(/img/bg-login.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100vh;
+}
+
+#layout-logged-out header {
+  align-self: start;
+  grid-area: header;
+}
+
+#layout-logged-out main {
+  align-self: center;
+  grid-area: main;
+
+}
+
+#layout-logged-out footer {
+  align-self: end;
+  grid-area: footer;
+}

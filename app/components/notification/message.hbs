@@ -1,0 +1,21 @@
+<li {{class "__message" @message.type is-closing=this.isClosing }} data-ui-component="notification-message">
+  <div class="__wrapper">
+    <p class="__message-text" data-role="message-text">
+      {{@message.text}}
+    </p>
+  </div>
+
+  <button
+    {{on "click" this.onPop}}
+
+    class="__close-button"
+    data-role={{concat "close-" @message.type "-message"}}
+    >
+      {{svg-jar "close" class="fill-white" width="20" height="20"}}
+    <span class="screen-hidden">Close</span>
+  </button>
+
+  {{#if @message.countdown}}
+    <div class="__countdown" data-role="notification-countdown" />
+  {{/if}}
+</li>

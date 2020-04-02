@@ -1,0 +1,76 @@
+<div
+  id="application"
+  data-color-mode={{this.colorMode}}
+  class="bg-inverse text-text"
+>
+  <Notification::Messages />
+
+  {{outlet}}
+
+  <Notification::Toasts />
+
+  {{#if this.isDevelopment}}
+    <nav class="fixed py-2 px-8 right-0 bottom-0 bg-inverse">
+      <LinkTo @route="freestyle" class="ml-8">
+        Styleguide
+      </LinkTo>
+
+      <a
+        class="ml-8"
+        href="/ember-svg-jar/index.html"
+        rel="noopener noreferrer"
+        target="_blank">
+        SVGs
+      </a>
+
+      <a
+        class="ml-8"
+        href="https://api.emberjs.com/ember/release"
+        rel="noopener noreferrer"
+        target="_blank">
+        Ember API
+      </a>
+
+      <a
+        class="ml-8"
+        href="https://github.com/ember-cli/ember-rfc176-data#new-modules-to-globals"
+        rel="noopener noreferrer"
+        target="_blank">
+        Ember Globals
+      </a>
+
+      <a
+        class="ml-8"
+        href="https://tailwindcss.com/docs/utility-first"
+        rel="noopener noreferrer"
+        target="_blank">
+        Tailwind
+      </a>
+
+      <a
+        class="ml-8"
+        href="https://www.ember-cli-mirage.com/docs/getting-started/what-is-mirage"
+        rel="noopener noreferrer"
+        target="_blank">
+        Mirage
+      </a>
+
+      <a
+        class="ml-8"
+        href="/tests"
+        rel="noopener noreferrer"
+        target="_blank">
+        Tests
+      </a>
+
+      <a
+        class="ml-8"
+        href="https://github.com/simplabs/qunit-dom/blob/master/API.md"
+        rel="noopener noreferrer"
+        target="_blank">
+        Qunit Dom
+      </a>
+    </nav>
+  {{/if}}
+
+</div>

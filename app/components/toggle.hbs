@@ -1,0 +1,23 @@
+<label
+  {{class
+   "toggle-component"
+   @class
+   checked=@checked
+   disabled=@disabled
+  }}
+  for={{this.guid}}
+  data-ui-component="toggle"
+  data-role={{@role}}
+>
+  <div class="__switch" />
+  <span class="__text">
+    {{@label}}
+  </span>
+  <Input
+    @checked={{@checked}}
+    @disabled={{@disabled}}
+    @id={{this.guid}}
+    @name={{this.name}}
+    @type="checkbox"
+  />
+</label>

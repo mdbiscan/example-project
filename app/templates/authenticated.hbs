@@ -1,0 +1,9 @@
+<div id="layout-authenticated">
+  <SiteHeader
+    @onLogout={{fn this.onLogout}}
+  />
+
+  <main>
+    {{outlet}}
+  </main>
+</div>

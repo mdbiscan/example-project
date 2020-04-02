@@ -1,0 +1,63 @@
+<header id="site-header">
+  <div role="banner">
+    Example Project
+  </div>
+
+  <div class="flex">
+    <div data-role="system-time" class="text-center mr-24">
+      <div data-role="system-time" class="system-time -mb-8 text-txt">{{this.time.now}}</div>
+      <div data-role="timezone" class="timezone text-green-500">{{this.time.timezone}} (GMT{{this.time.offset}})</div>
+    </div>
+
+    <Button
+      @class={{if-else this.menu.show "show"}}
+      @id="toggle-menu"
+      @onClick={{action "onToggleMenu"}}
+      @role="toggle-menu"
+      @style="link"
+    >
+      {{svg-jar "hamburger" width="24" height="24"}}
+      <span class="screen-hidden">Toggle Main Menu</span>
+    </Button>
+
+    <ClickOutside @onClickOutside={{action "onCloseMenu"}}>
+      <nav
+        {{class
+          "main-menu"
+          show=this.menu.show
+        }}
+        aria-labelledby="main-menu"
+        aria-hasPopup="true"
+        aria-expanded={{this.ariaExpanded}}
+        data-role="main-menu"
+      >
+        <div class="screen-hidden" id="main-menu">Main Menu</div>
+        <ul>
+          <li role="menuitem">
+            <LinkTo
+              class="flex items-center font-normal text-md text-base hover:text-green-500 hover:no-underline focus:outline-none focus:text-green-500"
+              @route="authenticated.settings"
+            >
+              {{svg-jar "preferences" class="fill-gray-800 mr-16" width="14" height="14"}}
+              Settings
+            </LinkTo>
+          </li>
+
+          <li class="div-light my-8" />
+
+          <li role="menuitem">
+            <Button
+              @class="flex items-center font-normal text-md text-base hover:text-green-500 hover:no-underline focus:outline-none focus:text-green-500"
+              @onClick={{@onLogout}}
+              @role="logout"
+              @style="link"
+            >
+              {{svg-jar "logout" class="fill-gray-800 mr-16" width="14" height="14"}}
+              Logout
+            </Button>
+          </li>
+        </ul>
+      </nav>
+    </ClickOutside>
+  </div>
+</header>

@@ -1,0 +1,7 @@
+#layout-authenticated {
+
+}
+
+#layout-authenticated main {
+  padding-top: var(--header-height);
+}

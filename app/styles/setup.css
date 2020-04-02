@@ -1,0 +1,119 @@
+/* Default Light Mode vars */
+:root {
+  --black: #191919;
+  --white: #FFFFFF;
+
+  /* Black */
+  --base: #191919;
+  --base-5a: rgba(0, 0, 0, 0.05);
+  --base-10a: rgba(0, 0, 0, 0.10);
+  --base-15a: rgba(0, 0, 0, 0.15);
+  --base-25a: rgba(0, 0, 0, 0.25);
+  --base-50a: rgba(0, 0, 0, 0.5);
+
+  /* White */
+  --inverse: #FFFFFF;
+  --inverse-5a: rgba(255, 255, 255, 0.05);
+  --inverse-10a: rgba(255, 255, 255, 0.10);
+  --inverse-15a: rgba(255, 255, 255, 0.15);
+  --inverse-25a: rgba(255, 255, 255, 0.25);
+  --inverse-50a: rgba(255, 255, 255, 0.5);
+
+  --gray-300: #FCFCFC;
+  --gray-400: #F7F7F7;
+  --gray-500: #E2E2E3;
+  --gray-600: #C8CFD3;
+  --gray-700: #919EA6;
+  --gray-800: #5F737F;
+
+  --green-500: #0D7B60;
+
+  --system-success: #6AB752;
+  --system-error: #DB0000;
+
+  /* Base Text Color */
+  --txt: #5F737F;
+
+  --min-width: 48rem;
+}
+
+/* Dark Mode vars */
+[data-color-mode=dark] {
+  /* White */
+  --base: #FFFFFF;
+  --base-5a: rgba(255, 255, 255, 0.05);
+  --base-10a: rgba(255, 255, 255, 0.10);
+  --base-15a: rgba(255, 255, 255, 0.15);
+  --base-25a: rgba(255, 255, 255, 0.25);
+  --base-50a: rgba(255, 255, 255, 0.5);
+
+  /* Black */
+  --inverse: #191919;
+  --inverse-5a: rgba(0, 0, 0, 0.05);
+  --inverse-10a: rgba(0, 0, 0, 0.10);
+  --inverse-15a: rgba(0, 0, 0, 0.15);
+  --inverse-25a: rgba(0, 0, 0, 0.25);
+  --inverse-50a: rgba(0, 0, 0, 0.5);
+
+  /* Base Text Color */
+  --txt: #C8CFD3;
+}
+
+/* 1rem === 10px */
+html {
+  color: var(--txt);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  /* Basic font size */
+  font-size: 1.6rem;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+#application {
+  min-width: var(--min-width);
+}
+
+.FreestyleGuide-body {
+  background: var(--inverse);
+  color: var(--txt);
+}
+
+.FreestyleGuide-titleContainer {
+  color: var(--txt);
+}
+
+.FreestyleGuide-nav {
+  background: var(--inverse);
+  color: var(--txt);
+}
+
+.FreestyleMenu-itemLink,
+.FreestyleMenu-submenuItemLink {
+  color: var(--txt);
+}
+
+.FreestyleGuide-cta svg {
+  fill: var(--txt);
+}

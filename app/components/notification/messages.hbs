@@ -1,0 +1,7 @@
+{{#if this.messages}}
+  <ul class="notification-messages-component" data-ui-component="notification-messages">
+    {{#each this.messages as |message|}}
+      <Notification::Message @message={{message}} />
+    {{/each}}
+  </ul>
+{{/if}}

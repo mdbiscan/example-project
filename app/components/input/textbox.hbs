@@ -1,0 +1,52 @@
+<div
+  {{class
+    "input-textbox-component"
+    @class
+    focus=this.focus
+    full-width=this.full
+    has-value=@value
+    with-icon=@icon
+    disabled=@disabled
+    readonly=@readonly
+    error=@error
+    success=@success
+  }}
+  data-ui-component="input-textbox"
+>
+  <div class="__container">
+    <label
+      data-input-label={{concat @name "-label"}}
+      for={{this.guid}}>
+      {{@label}}
+    </label>
+
+    <Input
+      @disabled={{@disabled}}
+      @id={{this.guid}}
+      @max={{@max}}
+      @min={{@min}}
+      @name={{@name}}
+      @placeholder={{this.placeholder}}
+      @readonly={{@readonly}}
+      @type={{this.type}}
+      @value={{@value}}
+
+      @focus-in={{fn this.onFocusIn}}
+      @focus-out={{fn this.onFocusOut}}
+      @key-press={{fn this.onKeyPress}}
+      @key-up={{fn this.onKeyUp}}
+    />
+
+    <div class="__bar" />
+
+    {{#if @icon}}
+      {{svg-jar @icon class="__icon" width="20" height="20"}}
+    {{/if}}
+  </div>
+
+  {{#if (and (or @error @success) @message)}}
+    <p data-role={{concat @name '-textbox-message'}} class="__message">
+      {{@message}}
+    </p>
+  {{/if}}
+</div>
