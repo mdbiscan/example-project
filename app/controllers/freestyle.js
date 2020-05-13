@@ -1,4 +1,5 @@
 import { inject as service } from '@ember/service';
+import { inject as controller  } from '@ember/controller'
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 import FreestyleController from 'ember-freestyle/controllers/freestyle';
@@ -6,6 +7,7 @@ import FreestyleController from 'ember-freestyle/controllers/freestyle';
 export default class FreestyleOctaneController extends FreestyleController {
   @service emberFreestyle;
   @service notification;
+  @controller application;
 
   onTransition(event) {
     let element = event.target;
@@ -90,10 +92,5 @@ export default class FreestyleOctaneController extends FreestyleController {
     alert(`Check! ${event.target.checked}`);
 
     this.checkboxAltValue = !this.checkboxAltValue;
-  }
-
-  @action
-  onSelectRadioValue(value) {
-    this.radioValue = value;
   }
 }

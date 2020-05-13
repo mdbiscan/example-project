@@ -84,6 +84,26 @@
   </FreestyleSection>
 
   <FreestyleSection @name="Colors" as |Section|>
+    <Section.subsection @name="Color Mode">
+      <p class="m-16 text-lg">Easily switch color variable contexts to create different app themes.</p>
+      <Input::RadioGroup
+        @value={{this.application.colorMode}}
+        @class="p-16"
+        @name="theme"
+        as |Group|
+      >
+        <Group.Radio
+          @value="dark"
+        >
+          Dark Mode
+        </Group.Radio>
+        <Group.Radio
+          @value="light"
+        >
+          Light Mode
+        </Group.Radio>
+      </Input::RadioGroup>
+    </Section.subsection>
     <Section.subsection @name="Text">
       <ul class="flex m-16 text-center">
         <li class="m-4">
